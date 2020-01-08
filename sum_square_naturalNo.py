@@ -34,10 +34,11 @@ def sum_naturalSquareNo1(limit):
     return
 
 if __name__ == "__main__":
+    print("Finding sum of the squares of all natural numbers from 1 to N.\n")
     try:
         limit_no = int(input("Enter limit: "))
         sum_square = sum_naturalSquareNo1(limit_no)
-        print(sum_square)
+        print('Sum:', sum_square)
     except Exception as e:
         print('Error occured : {}'.format(e))
     input('Enter any key')

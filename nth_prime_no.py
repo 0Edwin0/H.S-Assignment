@@ -34,6 +34,7 @@ def nth_prime(nth):
     return
     
 if __name__ == "__main__":
+    print('Finding N-th Prime no.\n')
     try:
         nthPrimePos = int(input("Enter a number for n-th prime no.: "))
         prime_no = nth_prime(nthPrimePos)

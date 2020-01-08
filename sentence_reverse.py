@@ -3,18 +3,16 @@
 # Reverse the whole string without reversing
 # the individual words in it.
 
-def strReverse(string, sep=None):
+def strReverse(string, sep='.'):
     '''
     Return reversed string without reversing 
-    individual words in it, using `sep` as 
-    the delimiter string.
+    individual words in it.
 
     string : (str) value for reversing.
 
     sep : (str) The delimiter according which to
-    split the string.None (the default value) 
-    means split according to any whitespace, 
-    and discard empty strings from the result.
+    split the string into words. `.` (the default value) 
+    means split according to any dot.
 
     '''
     
@@ -28,9 +26,10 @@ def strReverse(string, sep=None):
     return new_string
 
 if __name__ == '__main__':
+    print("Reverse the whole string without reversing the individual words in it.\n")
     try:
-        string = input('Enter String:')
-        new_str = strReverse(string=string, sep='.')
+        string = input('Enter String : ')
+        new_str = strReverse(string)
         print('Reversed String:', new_str)
     except Exception as e :
         print('Error occured : {}'.format(e))
