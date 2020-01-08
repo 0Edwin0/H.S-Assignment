@@ -11,13 +11,13 @@
 #     (using loop)
 #     '''
 
-#     if limit >= 1:
+#     if limit >= 1 and type(limit)==int:
 #         sum = 0
 #         for n in range(1, limit+1):
 #             sum += n**2
 #         return sum
 #     else:
-#         raise ValueError('limit should be greater than or equal to 1.')
+#         raise ValueError('limit int() should be greater than or equal to 1.')
 #     return
 
 def sum_naturalSquareNo1(limit):
@@ -26,11 +26,11 @@ def sum_naturalSquareNo1(limit):
 
     (using formula sn=(n(n+1)(2n+1))/6 )
     '''
-    if limit >= 1:
+    if limit >= 1 and type(limit)==int:
         s = int((limit*(limit+1)*((limit*2)+1))/6)
         return s
     else:
-        raise ValueError('limit should be greater than or equal to 1.')
+        raise ValueError('limit int() should be greater than or equal to 1.')
     return
 
 if __name__ == "__main__":

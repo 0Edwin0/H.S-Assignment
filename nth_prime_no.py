@@ -17,7 +17,7 @@ def nth_prime(nth):
     Return the N-th prime number.
     '''
 
-    if nth >= 1:
+    if nth >= 1 and type(nth)==int:
         num = 2
         count = 0
 
@@ -30,7 +30,7 @@ def nth_prime(nth):
                 num += 1
         
     else:
-        raise ValueError('nth value should be greater than or equal to 1.')
+        raise ValueError('nth int() should be greater than or equal to 1.')
     return
     
 if __name__ == "__main__":
