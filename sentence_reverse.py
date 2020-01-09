@@ -17,17 +17,13 @@ def strReverse(string, sep=None):
     '''
     
     list_str = string.split(sep)
-    
-    if len(list_str)>2:
-        print(len(list_str),list_str)
-        rev_list = list_str[::-1]
-    else:
-        rev_list = list_str
-    
+    rev_list = list_str[::-1]
+        
     if sep:
         v = sep
     else:
         v = ' '
+    
     new_string = v.join(rev_list)
     
     return new_string
